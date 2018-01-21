@@ -15,5 +15,6 @@ public class HomeController {
 	public String indexView(HttpServletRequest request) {
 		String model = request.getAttribute("model") + "";
 		return model + ".index";
+		
 	}
 }
