@@ -1,0 +1,48 @@
+<!DOCTYPE tiles-definitions PUBLIC
+      "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+	<definition name="baseLayout" template="/WEB-INF/views/layout/appLayout.jsp">
+		<put-attribute name="header" value="/WEB-INF/views/layout/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/layout/menu.jsp" />
+		<put-attribute name="nav" value="/WEB-INF/views/layout/nav.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/layout/body.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/views/layout/footer.jsp" />
+	</definition>
+	<definition name="body" template="/WEB-INF/views/layout/app_body.jsp">
+		<put-attribute name="body" value="/WEB-INF/views/layout/body.jsp" />
+	</definition>
+	<definition name="pc.index" extends="baseLayout">
+	</definition>
+	<definition name="pc.user.index" extends="body">
+		<put-attribute name="body" value="/WEB-INF/views/user/index.jsp" />
+	</definition>
+	<definition name="pc.user.photo.index" extends="body">
+		<put-attribute name="body" value="/WEB-INF/views/user/user_photo.jsp" />
+	</definition>
+	<definition name="pc.user.info.index" extends="body">
+		<put-attribute name="body" value="/WEB-INF/views/user/user_info.jsp" />
+	</definition>
+	<definition name="pc.fields.index" extends="body">
+		<put-attribute name="body" value="/WEB-INF/views/fields/index.jsp" />
+	</definition>
+	<definition name="pc.logs.index" extends="body">
+		<put-attribute name="body" value="/WEB-INF/views/logs/index.jsp" />
+	</definition>
+	<definition name="pc.modules.index" extends="body">
+		<put-attribute name="body" value="/WEB-INF/views/modules/index.jsp" />
+	</definition>
+	<definition name="pc.powers.index" extends="body">
+		<put-attribute name="body" value="/WEB-INF/views/powers/index.jsp" />
+	</definition>
+	<definition name="pc.role.index" extends="body">
+		<put-attribute name="body" value="/WEB-INF/views/role/index.jsp" />
+	</definition>
+	<definition name="pc.manager.index" extends="body">
+		<put-attribute name="body" value="/WEB-INF/views/manager/index.jsp" />
+	</definition>
+	<definition name="pc.message.index" extends="body">
+		<put-attribute name="body" value="/WEB-INF/views/message/index.jsp" />
+	</definition>
+</tiles-definitions>
